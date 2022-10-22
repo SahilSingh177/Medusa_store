@@ -23,14 +23,14 @@ try {
 }
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS = "https://techattire-admin.vercel.app" || "http://localhost:7000,http://localhost:7001";
+const ADMIN_CORS = "https://techattire-admin.vercel.app/" || "http://localhost:7000,http://localhost:7001";
 
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 // Database URL (here we use a local database called medusa-development)
 const DB_USERNAME = process.env.DB_USERNAME
-const DB_PASSWORD = process.env.DB_PASSWOR;
+const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_HOST = process.env.DB_HOST;
 const DB_PORT = process.env.DB_PORT;
 const DB_DATABASE = process.env.DB_DATABASE;
